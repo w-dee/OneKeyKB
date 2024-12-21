@@ -1,0 +1,21 @@
+# KiCadの一時ファイルやバックアップファイルを無視
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-bak.kicad_pcb
+*-bak.kicad_sch
+*-cache.lib
+*-rescue.lib
+*-save.pro
+*-save.kicad_pcb
+*-save.kicad_sch
+*.tmp
+*~
+_autosave-*
+fp-info-cache
+~*.lck
+gerber.zip
+*.FCStd
+*-backups/
+gerber/

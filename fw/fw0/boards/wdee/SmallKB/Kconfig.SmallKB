@@ -1,0 +1,15 @@
+# ボードに固有のKconfigオプションを定義するファイルです。
+# このファイルは、カスタムボードに特有の設定項目をKconfigシステムに追加したり、
+# 選択肢として提供するために使用されます。
+# 他のKconfigファイル（prj.confやKconfig.defconfig）で
+# 使用できる設定オプションを「作成」します。
+# menu "SmallKB board options"
+#
+# config SMALLKB_CUSTOM_FEATURE
+#     bool "Enable custom feature for SmallKB"
+#    default n
+#     help
+#        Enable or disable the custom feature specific to the SmallKB board.
+
+config BOARD_SMALLKB
+	select SOC_NRF52832_QFAA

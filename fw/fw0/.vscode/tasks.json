@@ -1,0 +1,10 @@
+{
+    "tasks": [
+        {
+            "type": "nrf-connect-flash",
+            "config": "/workspace/kicad/SmallKB/fw/fw0/build",
+            "problemMatcher": [],
+            "label": "nRF Connect: Flash: fw0/build (active)"
+        }
+    ]
+}

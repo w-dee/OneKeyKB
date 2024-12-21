@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "gpio.h": "c",
+        "hci.h": "c",
+        "*.tcc": "c",
+        "random": "c"
+    },
+    "nrf-connect.debugging.bindings": {
+        "${workspaceFolder}/build": "Launch build"
+    }
+}

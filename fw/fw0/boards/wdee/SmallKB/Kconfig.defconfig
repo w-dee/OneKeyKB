@@ -1,0 +1,31 @@
+# 役割
+#
+#    ボードに固有のデフォルト設定を定義するファイルです。
+#    特定のボードをビルドする際に、Kconfigシステムが採用する「デフォルトの値」を指定します。
+#    主に、Zephyr全体で使われる一般的なKconfigオプション（例: UART, I2Cなど）に対して、そのボードに適したデフォルト値を提供します。
+# UARTを有効化してコンソールとして使用
+#config UART_CONSOLE
+#    default y if BOARD_SMALLKB
+
+# BLEスタックを有効化
+#config BT
+#    default y if BOARD_SMALLKB
+
+
+
+if BOARD_SMALLKB
+
+config BT_CTLR
+	default BT
+
+config LOG_BACKEND_RTT_BUFFER
+	default 0
+config LOG_BACKEND_RTT_OUTPUT_DEFAULT
+	default LOG_BACKEND_RTT_BUFFER
+
+config SEGGER_RTT_BUFFER_SIZE_UP
+	default 1024
+config SEGGER_RTT_BUFFER_SIZE_DOWN
+	default 16
+
+endif # BOARD_SMALLKB
