@@ -3,13 +3,7 @@
 #    ボードに固有のデフォルト設定を定義するファイルです。
 #    特定のボードをビルドする際に、Kconfigシステムが採用する「デフォルトの値」を指定します。
 #    主に、Zephyr全体で使われる一般的なKconfigオプション（例: UART, I2Cなど）に対して、そのボードに適したデフォルト値を提供します。
-# UARTを有効化してコンソールとして使用
-#config UART_CONSOLE
-#    default y if BOARD_SMALLKB
 
-# BLEスタックを有効化
-#config BT
-#    default y if BOARD_SMALLKB
 
 
 
