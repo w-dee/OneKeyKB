@@ -805,7 +805,7 @@ int main(void) {
 
     // 起動時に keycode を読み込む
     k_msleep(100UL); // 入力が安定するまでのダミーウェイト
-    keycode = 0x04;     // get_dipsw();
+    keycode = get_dipsw();
     printk("Key code : 0x%02x (%d)\n", keycode, keycode);
 
     register_pairing_button_cb(pairing_button_callback);
